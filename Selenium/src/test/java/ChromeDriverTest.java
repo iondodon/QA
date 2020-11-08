@@ -8,22 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by haozuo on 3/22/16.
- */
 public class ChromeDriverTest {
 
-    private String testUrl;
     private WebDriver driver;
 
     @Before
     public void prepare() {
-        System.setProperty("webdriver.chrome.driver", "/home/ion/Documents/UTM/QA (CS)/Lab5/chromedriver");
-        testUrl = "https://9gag.com/";
+        final String chromedriverPath = "/home/ion/Documents/UTM/QA (CS)/git/QA/Selenium/chromedriver";
+        final String testUrl = "https://9gag.com/";
+        System.setProperty("webdriver.chrome.driver", chromedriverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(testUrl);
