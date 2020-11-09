@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="ChromeDriverTest" time="6.099" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="ChromeDriverTest" time="9.7" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="14.0.2+12-Ubuntu-120.04"/>
@@ -55,5 +55,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="ChromeDriverTest" name="testTitle" time="6.099"/>
+  <testcase classname="ChromeDriverTest" name="testTitle" time="9.7"/>
 </testsuite>

@@ -17,7 +17,7 @@ public class ChromeDriverTest {
 
     @Before
     public void prepare() {
-        final String chromedriverPath = "/home/ion/Documents/UTM/QA (CS)/git/QA/Selenium/chromedriver";
+        final String chromedriverPath = "chromedriver";
         final String testUrl = "https://9gag.com/";
         System.setProperty("webdriver.chrome.driver", chromedriverPath);
         driver = new ChromeDriver();
@@ -26,7 +26,7 @@ public class ChromeDriverTest {
     }
 
     @Test
-    public void testTitle() throws IOException {
+    public void testHeader() throws IOException {
         WebElement searchIcon = driver.findElement(By.xpath("//*[@id=\"top-nav\"]/div/div/div[1]/a[2]"));
         searchIcon.click();
 
