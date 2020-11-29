@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-29T18:35:34.961Z",
+        "line": 12,
+        "name": "Validate that the headers is displayed after search",
+        "description": "",
+        "id": "header-is-displayed-after-search;validate-that-the-headers-is-displayed-after-search;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 46297153000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Home page of 9gag.com is opened",
+            "match": {
+              "location": "steps.header.CheckHeaderAfterSearchSteps.homePageOfGagComIsOpened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 369786000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Search button is clicked",
+            "match": {
+              "location": "steps.header.CheckHeaderAfterSearchSteps.searchButtonIsClicked()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1706812000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User writes \"shoes\" in the search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"shoes\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.header.CheckHeaderAfterSearchSteps.userWritesSomethingInTheSearch(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161745000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter is pressed",
+            "match": {
+              "location": "steps.header.CheckHeaderAfterSearchSteps.enterIsPressed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 492449000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Header is displayed",
+            "match": {
+              "location": "steps.header.CheckHeaderAfterSearchSteps.headerIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Header is displayed after search",
+    "description": "",
+    "id": "header-is-displayed-after-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Header.feature",
+    "tags": []
+  }
+]

@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/Header.feature",
         glue = {"steps/header"},
-        stepNotifications = true
+        stepNotifications = true,
+        plugin = { "json:target/cucumber.json", "pretty", "html:target/header-test.html" }
 )
 public class HeaderAfterSearchRunner {
 }

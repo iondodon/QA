@@ -15,6 +15,12 @@ public class HomePage extends Base {
 
     public HomePage() {
         driver.get("https://9gag.com/");
+        acceptCookies();
+    }
+
+    private void acceptCookies() {
+        WebElement acceptCookiesButton = driver.findElement(By.xpath("//*[text()='I ACCEPT']"));
+        acceptCookiesButton.click();
     }
 
     public void writeInSearchBar(String text) {
